@@ -1,0 +1,55 @@
+$blue : #1875e7;
+$side : left;
+$fontcolor: red;
+$color: 40;
+@mixin left($value : 10px){
+    float: left;
+    margin-left: $value;
+}
+
+.test{
+  width: 50%;
+  font-size: 14px;
+  @include left(50px);  
+}
+.text{
+  line-height: 14px;
+  border-top-#{$side}-radius:5px;
+}
+
+.test{
+    h1{
+       color: $fontcolor;
+    }    
+} 
+h1{
+    border: 1px solid $fontcolor;
+}
+a{
+    @extend h1;
+    &:hover{ color: $blue;}
+}
+
+//p{
+//  @if 1 + 1 == 2 {border: 1px solid $blue;}
+//  @if 5 < 3 {border: 2px dotted $blue;}
+//}
+
+$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+/*！
+    
+    编译不会被删除的注释！！！
+      
+ */

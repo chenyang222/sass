@@ -1,0 +1,38 @@
+$blue : #1875e7;
+$side : left;
+$fontcolor: red;
+
+@mixin left($value : 10px){
+    float: left;
+    margin-left: $value;
+}
+
+.test{
+  width: 50%;
+  font-size: 30px;
+  @include left(50px);  
+}
+.text{
+  line-height: 50px;
+  border: 1px solid $blue;
+  border-top-#{$side}-radius:5px;
+}
+
+.test{
+    h1{
+       color: $fontcolor;
+    }    
+} 
+h1{
+    border: 1px solid $fontcolor;
+}
+a{
+    @extend h1;
+    &:hover{ color: $blue;}
+}
+
+/*！
+    
+    编译不会被删除的注释！！！
+      
+ */

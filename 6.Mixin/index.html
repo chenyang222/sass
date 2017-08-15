@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="test.css" />
+	</head>
+	<body>
+		<!--
+			Mixin
+			
+				Mixin有点像C语言的宏（macro），是可以重用的代码块。
+				使用@mixin命令，定义一个代码块。
+				　　@mixin left {
+				　　　　float: left;
+				　　　　margin-left: 10px;
+				　　}
+				使用@include命令，调用这个mixin。
+				　　div {
+				　　　　@include left;
+				　　}
+				mixin的强大之处，在于可以指定参数和缺省值。
+				　　@mixin left($value: 10px) {
+				　　　　float: left;
+				　　　　margin-right: $value;
+				　　}
+				使用的时候，根据需要加入参数：
+				　　div {
+				　　　　@include left(20px);
+				　　}
+				下面是一个mixin的实例，用来生成浏览器前缀。
+				　　@mixin rounded($vert, $horz, $radius: 10px) {
+				　　　　border-#{$vert}-#{$horz}-radius: $radius;
+				　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
+				　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+				　　}
+				使用的时候，可以像下面这样调用：
+				　　#navbar li { @include rounded(top, left); }
+				　　#footer { @include rounded(top, left, 5px); }
+			
+		-->
+		<div class="test">
+			<h1 class="title">hello sass</h1>
+			<p class="text">
+				sass让人们受益的一个重要特性就是它为css引入了变量。你可以把反复使用的css属性值 定义成变量，然后通过变量名来引用它们，而无需重复书写这一属性值。或者，对于仅使用过一 次的属性值，你可以赋予其一个易懂的变量名，让人一眼就知道这个属性值的用途。
+			</p>
+			<a href="javascript:;">
+				鼠标hover
+			</a>
+		</div>
+		
+	</body>
+</html>

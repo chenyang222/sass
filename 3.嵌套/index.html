@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="test.css" />
+	</head>
+	<body>
+		<!--
+			嵌套
+				SASS允许选择器嵌套。比如，下面的CSS代码：
+				　　div h1 {
+				　　　　color : red;
+				　　}
+				可以写成：
+				　　div {
+				　　　　hi {
+				　　　　　　color:red;
+				　　　　}
+				　　}
+				属性也可以嵌套，比如border-color属性，可以写成：
+				　　p {
+				　　　　border: {
+				　　　　　　color: red;
+				　　　　}
+				　　}
+				注意，border后面必须加上冒号。
+				在嵌套的代码块内，可以使用&引用父元素。比如a:hover伪类，可以写成：
+				　　a {
+				　　　　&:hover { color: #ffb3ff; }
+				　　}
+			
+		-->
+		<div class="test">
+			<h1 class="title">hello sass</h1>
+			<p class="text">
+				sass让人们受益的一个重要特性就是它为css引入了变量。你可以把反复使用的css属性值 定义成变量，然后通过变量名来引用它们，而无需重复书写这一属性值。或者，对于仅使用过一 次的属性值，你可以赋予其一个易懂的变量名，让人一眼就知道这个属性值的用途。
+			</p>
+			<a href="javascript:;">
+				鼠标hover
+			</a>
+		</div>
+		
+	</body>
+</html>

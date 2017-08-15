@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.test {
+  width: 50%;
+  font-size: 14px;
+  float: left;
+  margin-left: 50px; }
+
+.text {
+  line-height: 14px;
+  border-top-left-radius: 5px; }
+
+.test h1, .test a {
+  color: red; }
+
+h1, a {
+  border: 1px solid red; }
+
+a:hover {
+  color: #1875e7; }
+
+p {
+  color: green; }
+
+/*！
+    
+    编译不会被删除的注释！！！
+      
+ */
+
+/*# sourceMappingURL=test.css.map */

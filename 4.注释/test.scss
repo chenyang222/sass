@@ -1,0 +1,39 @@
+$blue : #1875e7;
+$side : left;
+$var : 0.5;
+$fontcolor: red;
+.test{
+  width: 50%;
+  font-size: 30px;
+  margin-#{$side}: (50px/2);
+  margin-top: 50px + 100px;
+  padding-top: $var * 10%;
+}
+.text{
+  line-height: 50px;
+  border: 1px solid $blue;
+  border-top-#{$side}-radius:5px;
+  
+}
+
+.test{
+    h1{
+       color: $fontcolor;
+    }    
+} 
+h1{
+    border-style: dashed;
+    border-width: 1px;
+    border:{
+        color: $fontcolor;
+    }
+}
+a{
+    &:hover{ color: $fontcolor;}
+}
+
+/*！
+    
+    编译不会被删除的注释！！！
+      
+ */

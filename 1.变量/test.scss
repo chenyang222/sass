@@ -1,0 +1,13 @@
+$blue : #1875e7;
+$side : left;
+.test{
+  width: 50%;
+  font-size: 30px;
+  color: $blue;
+}
+.text{
+  line-height: 50px;
+  border: 1px solid $blue;
+  border-top-#{$side}-radius:5px;
+  
+}
