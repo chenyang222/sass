@@ -1,0 +1,20 @@
+$font : 'Montserrat-Light-Pimm';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@font-face {
+    font-family: 'Montserrat-Light-Pimm';
+    src:    url('../fonts/montserrat-light/montserrat-light-webfont.ttf') format('ttf'),
+            url('../fonts/montserrat-light/montserrat-light-webfont.otf') format('otf'),
+            url('../fonts/montserrat-light/montserrat-light-webfont.eot') format('eot'),
+            url('../fonts/montserrat-light/montserrat-light-webfont.woff2') format('woff2'),
+            url('../fonts/montserrat-light/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body { font-family:"Montserrat-Light-Pimm", "Source Han Sans", "思源黑体", "思源黑体 CN", "Source Sans Pro",  "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif; }
+html, body { text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; -moz-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale; } 
+
+.ft-light { font-weight: 100; }
+.ft-regular { font-weight: 400; }
+.ft-bold { font-weight: 700; }

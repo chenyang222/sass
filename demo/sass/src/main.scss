@@ -1,0 +1,215 @@
+
+
+
+
+.gWidth{
+	width: 80%;
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+
+
+// WEBPAGE
+
+
+.webpage{
+	width: 100%;
+	margin: 50% auto;
+
+	.logo{
+		width: 100%;
+	}
+
+	.logo img{
+		width: 8%;
+		margin: 7% auto;
+		display: block;
+	}
+	
+	.intro .left,
+	.intro .right{
+		float: left;
+		width: 50%;
+	}
+}
+
+.text{
+	display: block;
+	font-size: 1.8rem;
+	margin: 10% auto;    
+	color: #888888;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h4{
+	@extend .text;
+	font-size: 2.4rem;
+	color: #322f31;
+	font-weight: normal;
+	float: right;
+	margin-right: 10%;
+}
+
+
+// CONTENT
+
+
+table {
+	border: 1px solid $grey;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+	font-size: 1.4rem;
+
+	tr {
+		border: 1px solid $grey;
+
+		th, td {
+			text-align: center;
+			padding: 1rem;  
+		}
+
+		td img{
+				width: 30%;
+		}
+
+		th {
+			text-transform: uppercase;
+			color: #4e4e4e;
+			background-color: #fbfbfb;  
+		}
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	table {
+		border: 0;
+
+		thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+
+		tr {
+			border-bottom: 3px solid $grey;
+			display: block;
+			margin-top: 10%;
+			margin-bottom: 10%;
+
+			td {
+				border-bottom: 1px solid $grey;
+				display: block;
+				text-align: right;
+			}
+
+			td:before {
+				/*
+				* aria-label has no advantage, it won't be read inside a table
+				content: attr(aria-label);
+				*/
+				content: attr(data-label);
+				float: left;
+				text-transform: uppercase;
+			}
+
+			td:last-child {
+				border-bottom: 0;
+			}
+		}
+
+	}
+}
+
+.footer{
+		width: 100%;
+		margin: 30px auto;
+		text-align: center;
+		font-size: 1.2rem;
+		color: #888888;    
+}
+
+
+@media screen and (min-width: 320px){  
+		
+		.intro .left,.intro .right{
+				width: 100%;
+				text-align: center;
+		}   
+		h4{
+		
+				float: none;
+				margin-right: 0%;
+		} 
+		.logo img{
+				width: 20%;
+		}  
+		.webpage{
+				width: 100%;
+				margin: 20% auto;
+		}           
+}
+@media screen and (min-width: 412px){ 
+		
+		.intro .left,.intro .right{
+				width: 100%;
+				text-align: center;
+		}   
+		h4{
+		
+				float: none;
+				margin-right: 0%;
+		} 
+		.logo img{
+				width: 20%;
+		}  
+		.webpage{
+				width: 100%;
+				margin: 50% auto;
+		}         
+}
+@media screen and (min-width: 768px){
+		.intro .left,.intro .right{
+				width: 50%;
+				text-align: left;
+		}   
+		h4{
+		
+				float: right;
+				margin-right: 10%;
+		}      
+		 .logo img{
+				width: 8%;
+		} 
+		.webpage{
+				width: 100%;
+				margin: 5% auto;
+		}         
+}
+@media screen and (min-width: 1024px) {
+		.intro .left,.intro .right{
+				width: 50%;
+				text-align: left;
+		}   
+		h4{
+				float: right;
+				margin-right: 10%;
+		}
+		 .logo img{
+				width: 8%;
+		} 
+		.webpage{
+				width: 100%;
+				margin: 5% auto;
+		}            
+}

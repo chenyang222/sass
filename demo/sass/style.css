@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* Style.css */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+@font-face {
+  font-family: 'Montserrat-Light-Pimm';
+  src: url("../fonts/montserrat-light/montserrat-light-webfont.ttf") format("ttf"), url("../fonts/montserrat-light/montserrat-light-webfont.otf") format("otf"), url("../fonts/montserrat-light/montserrat-light-webfont.eot") format("eot"), url("../fonts/montserrat-light/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+html, body {
+  font-family: "Montserrat-Light-Pimm", "Source Han Sans", "思源黑体", "思源黑体 CN", "Source Sans Pro",  "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif; }
+
+html, body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale; }
+
+.ft-light {
+  font-weight: 100; }
+
+.ft-regular {
+  font-weight: 400; }
+
+.ft-bold {
+  font-weight: 700; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem; }
+
+html, body {
+  font-family: "Montserrat-Light-Pimm", "Source Han Sans", "思源黑体", "思源黑体 CN", "Source Sans Pro", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale; }
+
+ul {
+  list-style: none; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  zoom: 1; }
+
+.gWidth {
+  width: 80%;
+  max-width: 1160px;
+  margin: 0 auto; }
+
+.webpage {
+  width: 100%;
+  margin: 50% auto; }
+  .webpage .logo {
+    width: 100%; }
+  .webpage .logo img {
+    width: 8%;
+    margin: 7% auto;
+    display: block; }
+  .webpage .intro .left,
+  .webpage .intro .right {
+    float: left;
+    width: 50%; }
+
+.text, h4 {
+  display: block;
+  font-size: 1.8rem;
+  margin: 10% auto;
+  color: #888888;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+h4 {
+  font-size: 2.4rem;
+  color: #322f31;
+  font-weight: normal;
+  float: right;
+  margin-right: 10%; }
+
+table {
+  border: 1px solid #DCDCDC;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 1.4rem; }
+  table tr {
+    border: 1px solid #DCDCDC; }
+    table tr th, table tr td {
+      text-align: center;
+      padding: 1rem; }
+    table tr td img {
+      width: 30%; }
+    table tr th {
+      text-transform: uppercase;
+      color: #4e4e4e;
+      background-color: #fbfbfb; }
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0; }
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px; }
+    table tr {
+      border-bottom: 3px solid #DCDCDC;
+      display: block;
+      margin-top: 10%;
+      margin-bottom: 10%; }
+      table tr td {
+        border-bottom: 1px solid #DCDCDC;
+        display: block;
+        text-align: right; }
+      table tr td:before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase; }
+      table tr td:last-child {
+        border-bottom: 0; } }
+.footer {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888888; }
+
+@media screen and (min-width: 320px) {
+  .intro .left, .intro .right {
+    width: 100%;
+    text-align: center; }
+
+  h4 {
+    float: none;
+    margin-right: 0%; }
+
+  .logo img {
+    width: 20%; }
+
+  .webpage {
+    width: 100%;
+    margin: 20% auto; } }
+@media screen and (min-width: 412px) {
+  .intro .left, .intro .right {
+    width: 100%;
+    text-align: center; }
+
+  h4 {
+    float: none;
+    margin-right: 0%; }
+
+  .logo img {
+    width: 20%; }
+
+  .webpage {
+    width: 100%;
+    margin: 50% auto; } }
+@media screen and (min-width: 768px) {
+  .intro .left, .intro .right {
+    width: 50%;
+    text-align: left; }
+
+  h4 {
+    float: right;
+    margin-right: 10%; }
+
+  .logo img {
+    width: 8%; }
+
+  .webpage {
+    width: 100%;
+    margin: 5% auto; } }
+@media screen and (min-width: 1024px) {
+  .intro .left, .intro .right {
+    width: 50%;
+    text-align: left; }
+
+  h4 {
+    float: right;
+    margin-right: 10%; }
+
+  .logo img {
+    width: 8%; }
+
+  .webpage {
+    width: 100%;
+    margin: 5% auto; } }
+
+/*# sourceMappingURL=style.css.map */
